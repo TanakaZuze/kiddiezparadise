@@ -1,0 +1,845 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    color: rgba(0, 0, 0, 0.801);
+    font-family: 'Changa', sans-serif;
+    font-family: 'Edu SA Beginner', cursive;
+    font-family: 'Jua', sans-serif;
+    background-color: rgba(37, 149, 190, 0.062);
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 10px;
+}
+
+/* Main page and hero box */
+.logo img {
+    /* padding: 10px 0; */
+    height:80px;
+    width: auto;
+    mix-blend-mode: color-burn;
+}
+
+.logo img:hover {
+    transform: scale(1.05);
+}
+
+.links a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.801);
+    padding: 0 10px;
+    font-size: 1.25rem;
+    color: rgb(11, 57, 68);
+}
+
+.links a :hover {
+    color: #fda82b;
+    padding-right: 6px;
+    font-size: 1.29rem;
+    letter-spacing: 5px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    align-items: center;
+}
+
+.hero-box {
+    padding: 25px 0;
+}
+
+.hero-text {
+    margin-top: 150px;
+    text-align: center;
+}
+
+.hero-text h1 {
+    font-size: 6.4rem;
+    color: #61ce70;
+    font-weight: 300;
+    animation: bounceInDown;
+    animation-duration: 2s;
+}
+
+.hero-text p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #23283f;
+    animation: bounceIn;
+    animation-duration: 2s;
+}
+
+.hero-text a {
+    border: solid 1px #23283f;
+    text-decoration: none;
+    padding: 10px 20px;
+    color: #23283f;
+}
+
+.hero-text a:hover {
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    letter-spacing: 2px;
+}
+
+/* Who we are and our vision */
+.aboutUs-header h2 {
+    margin-top: 170px;
+    text-align: center;
+    font-size: 4rem;
+    color: cornflowerblue;
+}
+
+.identity-box {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.identity-grid-1 {
+    margin: 0 10px;
+    width: 40%;
+    background-color: #9b6fe39d;
+    padding: 20px 10px;
+    min-height: 50px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.identity-grid-2 {
+    margin: 0 10px;
+    width: 40%;
+    background-color: #59c95b94;
+    padding: 20px 10px;
+    min-height: 50px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.identity-grid h1 {
+    text-align: center;
+    margin: 10px 0;
+    color: #61ce70;
+}
+
+.identity-grid p {
+    text-align: center;
+    margin: 10px;
+}
+
+/* Services ie different classes */
+.services-header {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.services-header h2 {
+    color: #fda82b;
+    font-size: 4rem;
+}
+
+.services-box {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.service-grid-1 {
+    margin: 0 10px;
+    width: 30%;
+    background-color: #59c95b94;
+    padding: 20px 5px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.service-grid-2 {
+    margin: 0 10px;
+    width: 30%;
+    background-color: #eb75b08f;
+    padding: 20px 5px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.service-grid-3 {
+    margin: 0 10px;
+    width: 30%;
+    background-color: #59c95b94;
+    padding: 20px 5px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+
+.service-grid-4 {
+    margin: 0 10px;
+    width: 30%;
+    background-color: #9b6fe39d;
+    padding: 20px 5px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.service-grid-5 {
+    margin: 0 10px;
+    width: 30%;
+    background-color: #9b6fe39d;
+    padding: 20px 5px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.service-grid p {
+    text-align: center;
+    margin: 10px;
+}
+
+/* extracurricular activities */
+.extracurricular-header {
+    margin-top: 50px;
+}
+
+.extracurricular-header h1 {
+    text-align: center;
+    color: rgb(105, 184, 233);
+    margin-bottom: 15px;
+    font-size: 4rem;
+}
+
+.extracurricular-header p {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 1.2rem;
+}
+
+.extracurricular {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.extracurricular-grid-1 h2 {
+    text-align: center;
+    padding: 10px 0;
+    font-size: 2.2rem;
+    padding: 30px 10px;
+}
+
+.extracurricular-grid-2 h2 {
+    text-align: center;
+    padding: 10px 0;
+    font-size: 2.2rem;
+    padding: 30px 10px;
+}
+
+.extracurricular-grid-1 {
+    width: 40%;
+    background-color: rgba(240, 128, 128, 0.76);
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+
+.extracurricular-grid-2 {
+    width: 40%;
+    background-color: rgba(250, 250, 210, 0.63);
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+
+.extracurricular-grid-1 p {
+    padding: 10px;
+}
+
+.extracurricular-grid-2 p {
+    padding: 10px;
+}
+
+
+/* Carousel goes here */
+.item img {
+    height: 300px;
+}
+
+.premises-header h2 {
+    font-size: 4rem;
+    text-align: center;
+    font-weight: 300;
+    margin-top: 60px;
+    color: darksalmon;
+}
+
+
+
+
+/* WHY WE ARE UNIQUE */
+.choose-us-header h1 {
+    font-size: 4rem;
+    color: darkturquoise;
+    text-align: center;
+    margin: 30px 0;
+}
+
+.choose-us-header p {
+    margin-bottom: 30px;
+}
+
+.choose-us {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+.choose-us-grid img {
+    width: 70px;
+}
+
+.choose-us-grid {
+    width: 15%;
+}
+
+.choose-us-grid {
+    text-align: center;
+    margin: 10px 15px;
+}
+
+/* Get in touch */
+.touch-details {
+    text-align: center;
+}
+
+.get-in-touch-box {
+    margin-top: 40px;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 30px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),
+        url(images/bg.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 300px;
+    border-radius: 10px;
+}
+
+.touch-details h2 {
+    font-size: 3.5em;
+    color: lightcoral;
+    margin-bottom: 20px;
+}
+
+.touch-details a {
+    text-decoration: none;
+    padding: 10px 30px;
+    border: 1px solid #23283f;
+    border-style: none;
+    background-color: skyblue;
+    color: rgba(0, 0, 0, 0.897);
+}
+
+.touch-details a:hover {
+    padding-right: 2px;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+}
+
+footer {
+    min-height: 300px;
+    background: #000000c9;
+}
+
+.footer-box {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+
+.footer-links-header {
+    color: rgba(255, 255, 255, 0.774);
+}
+
+.footer-links a {
+    display: flex;
+    flex-direction: column;
+    padding: 5px 0;
+}
+
+i {
+    color: rgba(255, 255, 255, 0.815);
+    font-size: 2rem;
+}
+
+/* Contact Us */
+.contact-us {
+    display: flex;
+    justify-content: center;
+    width: 30%;
+    margin: auto;
+    color: darkorange;
+}
+
+.contact-us a {
+    text-decoration: none;
+    color: #23283f;
+    border: 1px #23283f solid;
+    border-radius: 25px;
+    padding: 10px 30px;
+}
+
+.contact-header h1 {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 4rem;
+    color: lightsalmon;
+}
+
+.contact-form input {
+    display: block;
+    padding: 10px 50px;
+    margin: 20px 0;
+}
+
+.contact-grid img {
+    width: 50px;
+}
+
+.contact-grid {
+    display: flex;
+    margin-top: 30px;
+}
+
+/* cg stands for contact grid */
+.cg-head {
+    margin-left: 20px;
+
+}
+
+.cg-head h2 {
+    color: coral;
+}
+
+.cg-head p {
+    font-size: 0.9rem;
+}
+
+/* mobile navigation */
+.toggle-button {
+    display: none;
+}
+
+.mob-nav a {
+    text-decoration: none;
+    font-size: 1.25rem;
+    color: rgb(11, 57, 68);
+}
+
+.mob-nav {
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 60px;
+    background-color: #61ce70af;
+    width: 200px;
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 0;
+}
+
+.mob-nav a {
+    padding: 10px 15px;
+}
+
+.mob-nav.open {
+    height: 150px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* MEDIA QUERIES */
+/* MEDIA QUERY FOR 768 */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    /* Navbar */
+    .logo img {
+        height: 50px;
+        width: auto;
+    }
+    .logo{
+        width: 100%;
+    }
+
+    /* MOBILE NAVIGATION */
+    .links {
+        display: none;
+    }
+
+    .toggle-button {
+        display: block;
+    }
+
+    /* END OF MOB NAV */
+
+    .links a {
+        padding: 0 5px;
+        font-size: 1.2rem;
+        color: rgb(11, 57, 68);
+
+    }
+
+    /* Hero box */
+    .hero-text {
+        margin-top: 100px;
+    }
+
+    .hero-text h1 {
+        font-size: 3.9rem;
+    }
+
+    .hero-text p {
+        font-size: 1.2rem;
+    }
+
+    /* Identity grid */
+    .identity-box {
+        flex-direction: column;
+        margin-top: 30px;
+        font-size: 25px;
+    }
+
+    .identity-grid-1 {
+        margin: auto;
+        min-width: 100%;
+        background-color: #9b6fe39d;
+        padding: 40px 10px;
+        margin-bottom: 15px;
+        font-size: 1.6rem;
+    }
+
+    .identity-grid-2 {
+        margin: auto;
+        min-width: 100%;
+        background-color: #59c95b94;
+        padding: 40px 20px;
+        font-size: 1.6rem;
+    }
+
+    .identity-grid-1 h1 {
+        font-size: 2.2rem;
+    }
+
+    .identity-grid-2 h1 {
+        font-size: 2.2rem;
+    }
+
+    .identity-grid-1 ul li {
+        font-size: 3rem;
+    }
+
+    .identity-grid-1 ul li {
+        font-size: 1.5rem;
+    }
+
+    /* Services ie different classes */
+
+    .services-header h2 {
+        font-size: 3rem;
+    }
+
+    .services-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 30px;
+        text-align: center;
+    }
+
+    .service-grid-1 {
+        margin: auto;
+        width: 100%;
+        padding: 20px 5px;
+        background-color: #59c95b94;
+        margin-bottom: 15px;
+    }
+
+    .service-grid-2 {
+        margin: auto;
+        width: 100%;
+        padding: 20px 5px;
+        background-color: #eb75b08f;
+        margin-bottom: 15px;
+    }
+
+    .service-grid-3 {
+        margin: auto;
+        width: 100%;
+        padding: 20px 5px;
+        background-color: #59c95b94;
+        margin-bottom: 15px;
+    }
+
+    .service-grid-4 {
+        margin: auto;
+        width: 100%;
+        padding: 20px 5px;
+        background-color: #9b6fe39d;
+        margin-bottom: 15px;
+    }
+
+    .service-grid-5 {
+        margin: auto;
+        width: 100%;
+        padding: 20px 5px;
+        background-color: #eb75b08f;
+    }
+
+    .service-grid-3 p {
+        font-size: 1.6rem;
+    }
+
+
+    /* Extracurricular */
+    .extracurricular-header h1 {
+        text-align: center;
+        color: rgb(105, 184, 233);
+        margin-bottom: 15px;
+        font-size: 2.2rem;
+    }
+
+    .extracurricular-header p {
+        text-align: center;
+        margin-bottom: 30px;
+        font-size: 1.4rem;
+    }
+
+    .extracurricular {
+        flex-direction: column;
+    }
+
+    .extracurricular-grid-1 {
+        width: 100%;
+        background-color: rgba(240, 128, 128, 0.76);
+        margin-bottom: 15px;
+    }
+
+    .extracurricular-grid-2 {
+        width: 100%;
+        background-color: rgba(250, 250, 210, 0.63);
+    }
+
+    .extracurricular-header p {
+        text-align: center;
+        margin-bottom: 30px;
+        font-size: 1.6rem;
+    }
+
+    .extracurricular-grid-1 p {
+        font-size: 1.5rem;
+    }
+
+    .extracurricular-grid-2 p {
+        font-size: 1.5rem;
+    }
+
+    .item img {
+        width: 50px;
+
+    }
+
+    /* get in touch */
+    .get-in-touch-box {
+
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    .touch-details h2 {
+        font-size: 2rem;
+        color: lightcoral;
+        margin-bottom: 20px;
+    }
+
+    .touch-details a {
+        text-decoration: none;
+        padding: 10px 30px;
+        border: 1px solid #23283f;
+        border-style: none;
+        background-color: skyblue;
+    }
+
+    iframe {
+        display: none;
+    }
+
+    .footer-links h1 {
+        display: none;
+    }
+
+    .footer-box {
+        width: 90%;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .choose-us {
+        flex-direction: column;
+    }
+
+    .choose-us-grid img {
+        width: 120px;
+        margin: 10px;
+    }
+
+    .choose-us-grid p {
+        padding-bottom: 10px;
+        text-align: center;
+    }
+
+    .choose-us-grid {
+        width: 80%;
+    }
+
+    .premises-header h2 {
+        font-size: 3rem;
+    }
+
+    .contact-header h1 {
+        font-size: 3rem;
+    }
+
+}
+
+
+
+/* MEDIA QUERY FOR 768 */
+
+
+
+
+
+
+@media (max-width: 992px) {
+    .logo img {
+        height: 70px;
+    }
+
+    /* services section */
+    .services-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 30px;
+        text-align: center;
+    }
+
+    .service-grid-1 {
+        margin: auto;
+        width: 70%;
+        padding: 20px 5px;
+        background-color: #59c95b94;
+        margin-bottom: 15px;
+    }
+
+    .service-grid-2 {
+        margin: auto;
+        width: 70%;
+        padding: 20px 5px;
+        background-color: #eb75b08f;
+        margin-bottom: 15px;
+    }
+
+    .service-grid-3 {
+        margin: auto;
+        width: 70%;
+        padding: 20px 5px;
+        background-color: #59c95b94;
+        margin-bottom: 15px;
+    }
+
+    .service-grid-4 {
+        margin: auto;
+        width: 70%;
+        padding: 20px 5px;
+        background-color: #9b6fe39d;
+        margin-bottom: 15px;
+    }
+
+    .service-grid-5 {
+        margin: auto;
+        width: 70%;
+        padding: 20px 5px;
+        background-color: #eb75b08f;
+    }
+
+    /* map on footer  */
+    iframe {
+        width: 300px;
+    }
+
+    .footer-box {
+        width: 80%;
+        margin: auto;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .footer-map iframe{
+        margin-right: 20px;
+    }
+
+    .get-in-touch-box {
+        padding: 30px;
+        min-height: 220px;
+        border-radius: 10px;
+    }
+
+
+    .choose-us-grid p {
+        padding-bottom: 10px;
+    }
+
+    .choose-us-grid {
+        width: 80%;
+    }
+
+}
+
+@media (max-width: 576px) {
+    .mob-nav {
+        left: 2rem;
+        width: unset;
+    }
+}
+
+/* END OF CSS */
